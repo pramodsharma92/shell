@@ -1,1 +1,0 @@
-aws ec2 run-instances --image-id ami-9fa343e7 --count 1 --instance-type t2.micro --key-name my-key --region us-west-2 --security-group-ids sg-daa564a1 --subnet-id subnet-33264e54 --associate-public-ip-address --query 'Instances[0].InstanceId' --output text
