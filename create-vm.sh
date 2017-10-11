@@ -1,1 +1,1 @@
-aws ec2 run-instances --image-id $IMAGE-ID --count 1 --instance-type $INSTANCE-TYPE --key-name my-key --security-group-ids sg-daa564a1 --subnet-id subnet-33264e54 --associate-public-ip-address --query 'Instances[0].InstanceId' --output text
+aws ec2 run-instances --image-id ${IMAGE_ID} --count 1 --instance-type ${INSTANCE_TYPE} --key-name my-key --security-group-ids sg-daa564a1 --subnet-id subnet-33264e54 --associate-public-ip-address --query 'Instances[0].InstanceId' --output text
